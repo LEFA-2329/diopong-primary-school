@@ -1,0 +1,359 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="noindex, nofollow" name="robots" />
+    <meta
+      content="Diopong Primary School in Ga-Makanye, Limpopo. School information, parent guidance and free interactive learning activities."
+      name="description"
+    />
+    <title>Learning hub | Diopong Primary School</title>
+    <link href="./school-crest.png" rel="icon" type="image/png" />
+    <link href="./styles.css" rel="stylesheet" />
+    <script defer="" src="./script.js"></script>
+    <script defer="True" src="./grade-activities.js"></script>
+    <script defer="True" src="./learning.js"></script>
+    <script defer="True" src="./bilingual-activities.js"></script>
+    <script defer="True" src="./bilingual-hub.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="proposal">
+      <div class="wrap">
+        <span><i></i> Diopong Primary School</span
+        ><span>Ga-Makanye, Limpopo · School, home and community</span>
+      </div>
+    </div>
+    <header>
+      <div class="wrap nav">
+        <a
+          aria-label="Diopong Primary School home"
+          class="brand"
+          href="./index.html"
+          ><img
+            alt=""
+            class="school-crest"
+            height="58"
+            src="./school-crest.png"
+            width="58"
+          /><span>Diopong<strong>Primary School</strong></span></a
+        ><button
+          aria-controls="navigation"
+          aria-expanded="false"
+          class="menu-toggle"
+        >
+          Menu
+        </button>
+        <nav aria-label="Main navigation" id="navigation">
+          <a href="./index.html">Home</a><a href="./school.html">Our school</a
+          ><a href="./parents.html">For parents</a
+          ><a aria-current="page" href="./learning.html">Learning hub</a
+          ><a href="./contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="page-intro wrap">
+        <p class="eyebrow">FREE LEARNING HUB</p>
+        <h1>Little discoveries.<br />Lasting confidence.</h1>
+        <p class="lede">
+          Choose Grade R–7, English or Sepedi, then a subject. Explore
+          activities, printable worksheets and answer guidance at your own pace.
+        </p>
+        <div class="hub-summary">
+          <span>Grade R–7</span><span>English &amp; Sepedi</span
+          ><span>160 bilingual activities · 20 per grade</span
+          ><span>Printable worksheets &amp; answers</span>
+        </div>
+      </section>
+      <section class="wrap section" id="bilingual-hub">
+        <p class="eyebrow">MPHATO WA R–7 · GRADE R–7</p>
+        <h2 id="bilingual-title">Learn in your language.</h2>
+        <p>
+          Sepedi translations are draft learning material awaiting fluent
+          teacher review. Activities are supplementary, not official assessments
+          or a complete curriculum.
+        </p>
+        <div class="hub-toolbar">
+          <label
+            >Language / Polelo<select id="hub-language">
+              <option value="en">English</option>
+              <option value="nso">Sepedi</option>
+            </select></label
+          ><label
+            >Grade / Mphato<select id="hub-grade">
+              <option value="R">Grade R / Mphato wa R</option>
+              <option value="1">Grade 1 / Mphato wa 1</option>
+              <option value="2">Grade 2 / Mphato wa 2</option>
+              <option value="3">Grade 3 / Mphato wa 3</option>
+              <option value="4">Grade 4 / Mphato wa 4</option>
+              <option value="5">Grade 5 / Mphato wa 5</option>
+              <option value="6">Grade 6 / Mphato wa 6</option>
+              <option value="7">Grade 7 / Mphato wa 7</option>
+            </select></label
+          ><label
+            >Subject / Thuto<select id="hub-subject">
+              <option value="all">All / Ka moka</option>
+              <option value="maths">Maths / Dipalo</option>
+              <option value="languages">Languages / Maleme</option>
+              <option value="science">Science / Saense</option>
+              <option value="life">Life skills / Mabokgoni a bophelo</option>
+            </select></label
+          >
+        </div>
+        <p id="bilingual-count" role="status"></p>
+        <div class="buttons">
+          <button class="button primary" id="print-worksheet">
+            Download worksheet / Taonelouta letlakala</button
+          ><button class="button outline" id="print-answers">
+            Download answers / Taonelouta dikarabo
+          </button>
+        </div>
+        <p>
+          Download an HTML worksheet, open it in your browser, then choose Print
+          / Save as PDF. Worksheets follow the selected grade, subject and
+          language; answers are in a separate file.
+        </p>
+        <div
+          class="learning-grid"
+          id="bilingual-library"
+          style="margin-top: 24px"
+        ></div>
+      </section>
+      <section class="wrap section">
+        <h2>More English practice</h2>
+        <p>
+          These original activities provide supplementary practice by grade.
+          They are not a school-issued term plan, formal assessment or
+          confirmation of the school’s grade offerings. Follow your teacher’s
+          classwork and choose an appropriate level.
+        </p>
+        <div class="hub-toolbar">
+          <label for="grade-filter"
+            >Choose a grade<select id="grade-filter">
+              <option value="all">All grades and general</option>
+              <option value="4">Grade 4</option>
+              <option value="5">Grade 5</option>
+              <option value="6">Grade 6</option>
+              <option value="7">Grade 7</option>
+              <option value="general">General activities</option>
+            </select></label
+          >
+          <label for="activity-search"
+            >Find an activity<input
+              id="activity-search"
+              placeholder="Try reading, maths or science"
+              type="search" /></label
+          ><label for="level-filter"
+            >Choose a level<select id="level-filter">
+              <option value="all">All levels</option>
+              <option value="start">Getting started</option>
+              <option value="grow">Growing skills</option>
+              <option value="challenge">A little challenge</option>
+            </select></label
+          >
+        </div>
+        <p id="resource-count" role="status"></p>
+        <noscript
+          >Enable JavaScript for the searchable activity library and quizzes.
+          The reading story and home learning routine below are available
+          without JavaScript.</noscript
+        >
+        <div class="learning-grid" id="activity-library"></div>
+        <p hidden="" id="empty-results">
+          No activities match. Try a different word or level.
+        </p>
+      </section>
+      <section class="wrap section practice-section">
+        <p class="eyebrow">NUMBER STUDIO</p>
+        <h2>Practise. Try again. Get there.</h2>
+        <p>
+          Choose an operation and number range. There is no timer and no
+          leaderboard.
+        </p>
+        <div class="practice-controls">
+          <label
+            >Operation<select id="operation">
+              <option value="add">Addition +</option>
+              <option value="subtract">Subtraction −</option>
+              <option value="multiply">Multiplication ×</option>
+            </select></label
+          ><label
+            >Number range<select id="difficulty">
+              <option value="10">Up to 10</option>
+              <option value="20">Up to 20</option>
+              <option value="50">Up to 50</option>
+            </select></label
+          >
+        </div>
+        <form id="math-form">
+          <label for="math-answer" id="math-question">What is 3 + 4?</label>
+          <div class="math-input">
+            <input
+              aria-describedby="math-feedback"
+              id="math-answer"
+              inputmode="numeric"
+              required=""
+              type="number"
+            /><button class="button primary">Check answer</button>
+          </div>
+        </form>
+        <p id="math-feedback" role="status">
+          Take your time. You can count it out.
+        </p>
+        <p id="math-score">0 correct out of 0 answered this session</p>
+        <button class="button outline" id="new-sum">Next question</button>
+      </section>
+      <section class="wrap section story-section">
+        <p class="eyebrow">READ &amp; UNDERSTAND</p>
+        <h2>The seed in the tin.</h2>
+        <p class="story">
+          Lebo found an empty tin beside the door. With an adult’s help, she
+          filled it with soil and planted a bean. Every morning she checked the
+          soil and gave it a little water when it felt dry. For several days,
+          nothing appeared. Then a small green shoot pushed through the soil.
+          Lebo moved the tin near a sunny window and drew the plant in her
+          notebook.
+        </p>
+        <form id="reading-quiz">
+          <fieldset>
+            <legend>1. What did Lebo plant?</legend>
+            <label
+              ><input name="seed" required="" type="radio" value="stone" /> A
+              stone</label
+            ><label
+              ><input name="seed" type="radio" value="bean" /> A bean</label
+            ><label
+              ><input name="seed" type="radio" value="leaf" /> A leaf</label
+            >
+          </fieldset>
+          <fieldset>
+            <legend>2. Which word best describes Lebo?</legend>
+            <label
+              ><input name="quality" required="" type="radio" value="patient" />
+              Patient</label
+            ><label
+              ><input name="quality" type="radio" value="careless" />
+              Careless</label
+            >
+          </fieldset>
+          <button class="button primary">Check my understanding</button>
+          <p id="reading-feedback" role="status"></p>
+        </form>
+        <p>
+          <strong>Talk together:</strong> Why did Lebo check the soil before
+          adding water? Draw what you think the plant looked like a week later.
+        </p>
+      </section>
+      <section class="wrap section">
+        <p class="eyebrow">A SIMPLE HOME ROUTINE</p>
+        <h2>Make a little space for learning.</h2>
+        <div class="routine-grid">
+          <div>
+            <strong>Monday · Read</strong>
+            <p>Read together for 10 minutes and retell the story.</p>
+          </div>
+          <div>
+            <strong>Tuesday · Count</strong>
+            <p>Try five number questions. Explain one answer aloud.</p>
+          </div>
+          <div>
+            <strong>Wednesday · Explore</strong>
+            <p>Observe something outdoors with an adult.</p>
+          </div>
+          <div>
+            <strong>Thursday · Create</strong>
+            <p>Draw, write or build something using safe materials.</p>
+          </div>
+          <div>
+            <strong>Friday · Reflect</strong>
+            <p>Share one thing you learned and one question you still have.</p>
+          </div>
+        </div>
+        <p>
+          These are optional enrichment activities, not a replacement for
+          classwork. Choose a suitable level and use the language most
+          comfortable for your family.
+        </p>
+        <button class="button outline" id="print-guide">
+          Print the learning pack
+        </button>
+      </section>
+      <section class="wrap resource-links">
+        <h2>Trusted education resources</h2>
+        <p>
+          For official curriculum information, visit the education departments.
+          External websites may use data and have their own privacy policies.
+        </p>
+        <div class="buttons">
+          <a
+            class="button outline"
+            href="https://www.education.gov.za/"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Department of Basic Education</a
+          ><a
+            class="button outline"
+            href="https://www.edu.limpopo.gov.za/"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Limpopo Education</a
+          >
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap footer-top">
+        <div>
+          <a class="brand light" href="./index.html"
+            ><img
+              alt=""
+              class="school-crest"
+              height="58"
+              src="./school-crest.png"
+              width="58"
+            /><span>Diopong<strong>Primary School</strong></span></a
+          >
+          <p>
+            School information and learning resources for our community in
+            Ga-Makanye, Limpopo.
+          </p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <a href="./school.html">School information</a
+          ><a href="./parents.html">Parent guide</a
+          ><a href="./learning.html">Learning activities</a>
+        </div>
+        <div>
+          <h3>Helpful links</h3>
+          <a
+            href="https://www.edu.limpopo.gov.za/"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Limpopo Department of Education</a
+          ><a
+            href="https://www.education.gov.za/"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Department of Basic Education</a
+          ><a href="./privacy.html">Privacy and website information</a>
+        </div>
+      </div>
+      <div class="wrap footer-bottom">
+        <span>Diopong Primary School · Learning together</span
+        ><span
+          >Designed &amp; developed by
+          <a
+            href="https://lefamalatji.co.za/"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Lefa Malatji</a
+          ></span
+        >
+      </div>
+    </footer>
+  </body>
+</html>
