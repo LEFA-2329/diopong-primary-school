@@ -16,6 +16,7 @@
     <script defer="True" src="./grade-activities.js"></script>
     <script defer="True" src="./learning.js"></script>
     <script defer="True" src="./bilingual-activities.js"></script>
+    <script defer src="./activity-topics.js"></script>
     <script defer="True" src="./bilingual-hub.js"></script>
   <script src="./quiz-data.js" defer></script><script src="./certificate.js" defer></script><script src="./grade-quizzes.js" defer></script><script src="./worksheet-export.js" defer></script></head>
   <body>
@@ -106,6 +107,7 @@
             </select></label
           >
         </div>
+        <label for="hub-topic">Topic / Sehlogo<select id="hub-topic"><option value="all">All topics / Dihlogo ka moka</option></select></label>
         <p id="bilingual-count" role="status"></p>
         <label class="export-format" for="hub-format">File format / Mohuta wa faele<select id="hub-format"><option value="pdf">PDF (.pdf)</option><option value="docx">Word (.docx)</option></select></label><p id="hub-export-status" role="status"></p><div class="buttons">
           <button class="button primary" id="print-worksheet">
@@ -115,9 +117,7 @@
           </button>
         </div>
         <p>
-          Download an HTML worksheet, open it in your browser, then choose Print
-          / Save as PDF. Worksheets follow the selected grade, subject and
-          language; answers are in a separate file.
+          Choose PDF for printing or Word for editing. Worksheets follow the selected grade, subject, topic and language; answers are in a separate file.
         </p>
         <div
           class="learning-grid"
