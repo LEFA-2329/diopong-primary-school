@@ -17,7 +17,7 @@
     <script defer="True" src="./learning.js"></script>
     <script defer="True" src="./bilingual-activities.js"></script>
     <script defer="True" src="./bilingual-hub.js"></script>
-  <script src="./quiz-data.js" defer></script><script src="./certificate.js" defer></script><script src="./grade-quizzes.js" defer></script></head>
+  <script src="./quiz-data.js" defer></script><script src="./certificate.js" defer></script><script src="./grade-quizzes.js" defer></script><script src="./worksheet-export.js" defer></script></head>
   <body>
     <a class="skip" href="#main">Skip to content</a>
     <div class="proposal">
@@ -107,7 +107,7 @@
           >
         </div>
         <p id="bilingual-count" role="status"></p>
-        <div class="buttons">
+        <label class="export-format" for="hub-format">File format / Mohuta wa faele<select id="hub-format"><option value="pdf">PDF (.pdf)</option><option value="docx">Word (.docx)</option></select></label><p id="hub-export-status" role="status"></p><div class="buttons">
           <button class="button primary" id="print-worksheet">
             Download worksheet / Taonelouta letlakala</button
           ><button class="button outline" id="print-answers">
@@ -360,6 +360,7 @@
     </footer>
   </body>
 </html>
+
 
 
 

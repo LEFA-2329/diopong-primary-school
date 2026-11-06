@@ -83,36 +83,13 @@
       library.append(card);
     });
   }
-  const escape = (s) =>
-    s.replace(
-      /[&<>"']/g,
-      (c) =>
-        ({
-          "&": "&amp;",
-          "<": "&lt;",
-          ">": "&gt;",
-          '"': "&quot;",
-          "'": "&#39;",
-        })[c],
-    );
-  function pack(answers) {
-    const lang = language.value,
-      l = labels[lang];
-    return `<!doctype html><html lang="${lang}"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>${escape(l.grade)} ${grade.value} — ${escape(answers ? l.answers : l.worksheet)}</title><style>body{font:17px/1.7 Arial;max-width:800px;margin:40px auto;padding:20px;color:#174c2e}h1{font:36px Georgia}article{break-inside:avoid;border-top:1px solid #bbb;padding:20px 0}.space{height:100px;border-bottom:1px dotted #aaa}button{padding:12px;cursor:pointer}@media print{button{display:none}body{margin:0;color:#000}}</style><body><p>Diopong Primary School</p><h1>${escape(l.grade)} ${grade.value}: ${escape(answers ? l.answers : l.worksheet)}</h1><p>${escape(l.note)}</p><p>${escape(topic.value === "all" ? (lang === "nso" ? "Dihlogo ka moka" : "All topics") : activityTopicLabels[topic.value][lang])}</p>${answers ? "" : `<p>${escape(l.name)}: __________________ &nbsp; ${escape(l.date)}: __________</p>`}<button onclick="window.print()">${escape(l.print)}</button>${selected()
-      .map(
-        (a, i) =>
-          `<article><h2>${i + 1}. ${escape(a.title[lang])}</h2><p>${escape(a.task[lang])}</p>${answers ? `<p><strong>${escape(l.answer)}:</strong> ${escape(a.answer[lang])}</p>` : '<div class="space"></div>'}</article>`,
-      )
-      .join("")}</body></html>`;
-  }
-  function openPack(answers) {
-    const blob = new Blob([pack(answers)], { type: "text/html;charset=utf-8" });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = `Diopong-Grade-${grade.value}-${language.value}-${topic.value}-${answers ? "answers" : "worksheet"}.html`;
-    a.click();
-    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  async function openPack(answers) {
+    const status=document.querySelector('#hub-export-status');
+    const buttons=[document.querySelector('#print-worksheet'),document.querySelector('#print-answers')];
+    buttons.forEach(b=>b.disabled=true);status.textContent=language.value==='nso'?'Faele e a dirwa…':'Creating your file…';
+    try { await WorksheetExport.download({items:selected(),grade:grade.value,language:language.value,answers,format:document.querySelector('#hub-format').value,topicLabel:topic.value==='all'?'':activityTopicLabels[topic.value][language.value]});status.textContent=language.value==='nso'?'Faele e lokile. Lekola ditaonelouto tša gago.':'Your file is ready. Check your downloads.'; }
+    catch {status.textContent='The file could not be created. Please try again.';}
+    finally {buttons.forEach(b=>b.disabled=false);}
   }
   document
     .querySelector("#print-worksheet")
@@ -127,4 +104,5 @@
   updateTopics();
   render();
 })();
+
 
