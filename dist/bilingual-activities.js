@@ -1800,8 +1800,8 @@ const bilingualActivities = [
       "nso": "Hlaloša selo"
     },
     "task": {
-      "en": "Choose a familiar object. Describe its colour, shape and use. Write 3–4 sentences.",
-      "nso": "Kgetha selo se o se tsebago. Hlaloša mmala, sebopego le mošomo wa sona. Ngwala mafoko a 3–4."
+      "en": "Choose a familiar object. Describe its colour, shape and use. Write 3-4 sentences.",
+      "nso": "Kgetha selo se o se tsebago. Hlaloša mmala, sebopego le mošomo wa sona. Ngwala mafoko a 3-4."
     },
     "answer": {
       "en": "Use specific details. Older learners should organise the description and avoid repeating the same idea.",
@@ -1816,8 +1816,8 @@ const bilingualActivities = [
       "nso": "Tatelano ya leeto"
     },
     "task": {
-      "en": "Describe a journey to a familiar place using first, next and finally. Do not include your address. Write 3–4 sentences.",
-      "nso": "Hlaloša leeto la go ya lefelong le o le tsebago ka go diriša mathomong, go latela le mafelelong. O se ngwale aterese ya gago. Ngwala mafoko a 3–4."
+      "en": "Describe a journey to a familiar place using first, next and finally. Do not include your address. Write 3-4 sentences.",
+      "nso": "Hlaloša leeto la go ya lefelong le o le tsebago ka go diriša mathomong, go latela le mafelelong. O se ngwale aterese ya gago. Ngwala mafoko a 3-4."
     },
     "answer": {
       "en": "Events should follow a sensible order. Accept different safe, familiar journeys.",
@@ -1832,8 +1832,8 @@ const bilingualActivities = [
       "nso": "Botšiša dipotšišo tša maleba"
     },
     "task": {
-      "en": "Imagine a new book has arrived. Ask questions about its characters, setting and events. Write 3–4 sentences.",
-      "nso": "Akanya gore go fihlile puku ye mpsha. Botšiša dipotšišo ka baanegwa, lefelo le ditiragalo. Ngwala mafoko a 3–4."
+      "en": "Imagine a new book has arrived. Ask questions about its characters, setting and events. Write 3-4 sentences.",
+      "nso": "Akanya gore go fihlile puku ye mpsha. Botšiša dipotšišo ka baanegwa, lefelo le ditiragalo. Ngwala mafoko a 3-4."
     },
     "answer": {
       "en": "Examples: Who is the main character? Where does it happen? What problem must be solved?",
@@ -1848,8 +1848,8 @@ const bilingualActivities = [
       "nso": "Mafelelo a go fapana"
     },
     "task": {
-      "en": "Think of a story you know. Create a different ending that still fits its characters. Write 3–4 sentences.",
-      "nso": "Naganoa ka kanegelo ye o e tsebago. Dira mafelelo a mangwe ao a swanelago baanegwa. Ngwala mafoko a 3–4."
+      "en": "Think of a story you know. Create a different ending that still fits its characters. Write 3-4 sentences.",
+      "nso": "Naganoa ka kanegelo ye o e tsebago. Dira mafelelo a mangwe ao a swanelago baanegwa. Ngwala mafoko a 3-4."
     },
     "answer": {
       "en": "There is no single answer. Check that the ending connects to earlier events.",
@@ -1864,8 +1864,8 @@ const bilingualActivities = [
       "nso": "Hlopha didirišwa"
     },
     "task": {
-      "en": "With an adult, observe paper, a metal spoon and a plastic cup. Compare their properties. Write 3–4 sentences.",
-      "nso": "O na le motho yo mogolo, lebelela pampiri, lehwana la tšhipi le komiki ya polasitiki. Bapetša dipharologantšho tša tšona. Ngwala mafoko a 3–4."
+      "en": "With an adult, observe paper, a metal spoon and a plastic cup. Compare their properties. Write 3-4 sentences.",
+      "nso": "O na le motho yo mogolo, lebelela pampiri, lehwana la tšhipi le komiki ya polasitiki. Bapetša dipharologantšho tša tšona. Ngwala mafoko a 3-4."
     },
     "answer": {
       "en": "Describe observable features such as hardness and flexibility. Older learners should link a property to a suitable use.",
@@ -1896,8 +1896,8 @@ const bilingualActivities = [
       "nso": "Kgetha karabo ya botho"
     },
     "task": {
-      "en": "A learner is left out of a game. Suggest a kind response. Older learners: explain how to respect everyone’s choices. Write 3–4 sentences.",
-      "nso": "Morutwana o tlogetšwe papading. Šišinya karabo ya botho. Barutwana ba bagolwane: hlalošang ka moo le ka hlomphago dikgetho tša bohle. Ngwala mafoko a 3–4."
+      "en": "A learner is left out of a game. Suggest a kind response. Older learners: explain how to respect everyone’s choices. Write 3-4 sentences.",
+      "nso": "Morutwana o tlogetšwe papading. Šišinya karabo ya botho. Barutwana ba bagolwane: hlalošang ka moo le ka hlomphago dikgetho tša bohle. Ngwala mafoko a 3-4."
     },
     "answer": {
       "en": "Invite them to join without pressure, or suggest another shared activity. Ask a trusted adult if exclusion continues.",
@@ -1928,8 +1928,8 @@ const bilingualActivities = [
       "nso": "Hlaloša selo"
     },
     "task": {
-      "en": "Choose a familiar object. Describe its colour, shape and use. Write 3–4 sentences.",
-      "nso": "Kgetha selo se o se tsebago. Hlaloša mmala, sebopego le mošomo wa sona. Ngwala mafoko a 3–4."
+      "en": "Choose a familiar object. Describe its colour, shape and use. Write 3-4 sentences.",
+      "nso": "Kgetha selo se o se tsebago. Hlaloša mmala, sebopego le mošomo wa sona. Ngwala mafoko a 3-4."
     },
     "answer": {
       "en": "Use specific details. Older learners should organise the description and avoid repeating the same idea.",
@@ -1944,8 +1944,8 @@ const bilingualActivities = [
       "nso": "Tatelano ya leeto"
     },
     "task": {
-      "en": "Describe a journey to a familiar place using first, next and finally. Do not include your address. Write 3–4 sentences.",
-      "nso": "Hlaloša leeto la go ya lefelong le o le tsebago ka go diriša mathomong, go latela le mafelelong. O se ngwale aterese ya gago. Ngwala mafoko a 3–4."
+      "en": "Describe a journey to a familiar place using first, next and finally. Do not include your address. Write 3-4 sentences.",
+      "nso": "Hlaloša leeto la go ya lefelong le o le tsebago ka go diriša mathomong, go latela le mafelelong. O se ngwale aterese ya gago. Ngwala mafoko a 3-4."
     },
     "answer": {
       "en": "Events should follow a sensible order. Accept different safe, familiar journeys.",
@@ -1960,8 +1960,8 @@ const bilingualActivities = [
       "nso": "Botšiša dipotšišo tša maleba"
     },
     "task": {
-      "en": "Imagine a new book has arrived. Ask questions about its characters, setting and events. Write 3–4 sentences.",
-      "nso": "Akanya gore go fihlile puku ye mpsha. Botšiša dipotšišo ka baanegwa, lefelo le ditiragalo. Ngwala mafoko a 3–4."
+      "en": "Imagine a new book has arrived. Ask questions about its characters, setting and events. Write 3-4 sentences.",
+      "nso": "Akanya gore go fihlile puku ye mpsha. Botšiša dipotšišo ka baanegwa, lefelo le ditiragalo. Ngwala mafoko a 3-4."
     },
     "answer": {
       "en": "Examples: Who is the main character? Where does it happen? What problem must be solved?",
@@ -1976,8 +1976,8 @@ const bilingualActivities = [
       "nso": "Mafelelo a go fapana"
     },
     "task": {
-      "en": "Think of a story you know. Create a different ending that still fits its characters. Write 3–4 sentences.",
-      "nso": "Naganoa ka kanegelo ye o e tsebago. Dira mafelelo a mangwe ao a swanelago baanegwa. Ngwala mafoko a 3–4."
+      "en": "Think of a story you know. Create a different ending that still fits its characters. Write 3-4 sentences.",
+      "nso": "Naganoa ka kanegelo ye o e tsebago. Dira mafelelo a mangwe ao a swanelago baanegwa. Ngwala mafoko a 3-4."
     },
     "answer": {
       "en": "There is no single answer. Check that the ending connects to earlier events.",
@@ -1992,8 +1992,8 @@ const bilingualActivities = [
       "nso": "Hlopha didirišwa"
     },
     "task": {
-      "en": "With an adult, observe paper, a metal spoon and a plastic cup. Compare their properties. Write 3–4 sentences.",
-      "nso": "O na le motho yo mogolo, lebelela pampiri, lehwana la tšhipi le komiki ya polasitiki. Bapetša dipharologantšho tša tšona. Ngwala mafoko a 3–4."
+      "en": "With an adult, observe paper, a metal spoon and a plastic cup. Compare their properties. Write 3-4 sentences.",
+      "nso": "O na le motho yo mogolo, lebelela pampiri, lehwana la tšhipi le komiki ya polasitiki. Bapetša dipharologantšho tša tšona. Ngwala mafoko a 3-4."
     },
     "answer": {
       "en": "Describe observable features such as hardness and flexibility. Older learners should link a property to a suitable use.",
@@ -2024,8 +2024,8 @@ const bilingualActivities = [
       "nso": "Kgetha karabo ya botho"
     },
     "task": {
-      "en": "A learner is left out of a game. Suggest a kind response. Older learners: explain how to respect everyone’s choices. Write 3–4 sentences.",
-      "nso": "Morutwana o tlogetšwe papading. Šišinya karabo ya botho. Barutwana ba bagolwane: hlalošang ka moo le ka hlomphago dikgetho tša bohle. Ngwala mafoko a 3–4."
+      "en": "A learner is left out of a game. Suggest a kind response. Older learners: explain how to respect everyone’s choices. Write 3-4 sentences.",
+      "nso": "Morutwana o tlogetšwe papading. Šišinya karabo ya botho. Barutwana ba bagolwane: hlalošang ka moo le ka hlomphago dikgetho tša bohle. Ngwala mafoko a 3-4."
     },
     "answer": {
       "en": "Invite them to join without pressure, or suggest another shared activity. Ask a trusted adult if exclusion continues.",
@@ -2056,8 +2056,8 @@ const bilingualActivities = [
       "nso": "Hlaloša selo"
     },
     "task": {
-      "en": "Choose a familiar object. Describe its colour, shape and use. Write 3–4 sentences.",
-      "nso": "Kgetha selo se o se tsebago. Hlaloša mmala, sebopego le mošomo wa sona. Ngwala mafoko a 3–4."
+      "en": "Choose a familiar object. Describe its colour, shape and use. Write 3-4 sentences.",
+      "nso": "Kgetha selo se o se tsebago. Hlaloša mmala, sebopego le mošomo wa sona. Ngwala mafoko a 3-4."
     },
     "answer": {
       "en": "Use specific details. Older learners should organise the description and avoid repeating the same idea.",
@@ -2072,8 +2072,8 @@ const bilingualActivities = [
       "nso": "Tatelano ya leeto"
     },
     "task": {
-      "en": "Describe a journey to a familiar place using first, next and finally. Do not include your address. Write 3–4 sentences.",
-      "nso": "Hlaloša leeto la go ya lefelong le o le tsebago ka go diriša mathomong, go latela le mafelelong. O se ngwale aterese ya gago. Ngwala mafoko a 3–4."
+      "en": "Describe a journey to a familiar place using first, next and finally. Do not include your address. Write 3-4 sentences.",
+      "nso": "Hlaloša leeto la go ya lefelong le o le tsebago ka go diriša mathomong, go latela le mafelelong. O se ngwale aterese ya gago. Ngwala mafoko a 3-4."
     },
     "answer": {
       "en": "Events should follow a sensible order. Accept different safe, familiar journeys.",
@@ -2088,8 +2088,8 @@ const bilingualActivities = [
       "nso": "Botšiša dipotšišo tša maleba"
     },
     "task": {
-      "en": "Imagine a new book has arrived. Ask questions about its characters, setting and events. Write 3–4 sentences.",
-      "nso": "Akanya gore go fihlile puku ye mpsha. Botšiša dipotšišo ka baanegwa, lefelo le ditiragalo. Ngwala mafoko a 3–4."
+      "en": "Imagine a new book has arrived. Ask questions about its characters, setting and events. Write 3-4 sentences.",
+      "nso": "Akanya gore go fihlile puku ye mpsha. Botšiša dipotšišo ka baanegwa, lefelo le ditiragalo. Ngwala mafoko a 3-4."
     },
     "answer": {
       "en": "Examples: Who is the main character? Where does it happen? What problem must be solved?",
@@ -2104,8 +2104,8 @@ const bilingualActivities = [
       "nso": "Mafelelo a go fapana"
     },
     "task": {
-      "en": "Think of a story you know. Create a different ending that still fits its characters. Write 3–4 sentences.",
-      "nso": "Naganoa ka kanegelo ye o e tsebago. Dira mafelelo a mangwe ao a swanelago baanegwa. Ngwala mafoko a 3–4."
+      "en": "Think of a story you know. Create a different ending that still fits its characters. Write 3-4 sentences.",
+      "nso": "Naganoa ka kanegelo ye o e tsebago. Dira mafelelo a mangwe ao a swanelago baanegwa. Ngwala mafoko a 3-4."
     },
     "answer": {
       "en": "There is no single answer. Check that the ending connects to earlier events.",
@@ -2120,8 +2120,8 @@ const bilingualActivities = [
       "nso": "Hlopha didirišwa"
     },
     "task": {
-      "en": "With an adult, observe paper, a metal spoon and a plastic cup. Compare their properties. Write 3–4 sentences.",
-      "nso": "O na le motho yo mogolo, lebelela pampiri, lehwana la tšhipi le komiki ya polasitiki. Bapetša dipharologantšho tša tšona. Ngwala mafoko a 3–4."
+      "en": "With an adult, observe paper, a metal spoon and a plastic cup. Compare their properties. Write 3-4 sentences.",
+      "nso": "O na le motho yo mogolo, lebelela pampiri, lehwana la tšhipi le komiki ya polasitiki. Bapetša dipharologantšho tša tšona. Ngwala mafoko a 3-4."
     },
     "answer": {
       "en": "Describe observable features such as hardness and flexibility. Older learners should link a property to a suitable use.",
@@ -2152,8 +2152,8 @@ const bilingualActivities = [
       "nso": "Kgetha karabo ya botho"
     },
     "task": {
-      "en": "A learner is left out of a game. Suggest a kind response. Older learners: explain how to respect everyone’s choices. Write 3–4 sentences.",
-      "nso": "Morutwana o tlogetšwe papading. Šišinya karabo ya botho. Barutwana ba bagolwane: hlalošang ka moo le ka hlomphago dikgetho tša bohle. Ngwala mafoko a 3–4."
+      "en": "A learner is left out of a game. Suggest a kind response. Older learners: explain how to respect everyone’s choices. Write 3-4 sentences.",
+      "nso": "Morutwana o tlogetšwe papading. Šišinya karabo ya botho. Barutwana ba bagolwane: hlalošang ka moo le ka hlomphago dikgetho tša bohle. Ngwala mafoko a 3-4."
     },
     "answer": {
       "en": "Invite them to join without pressure, or suggest another shared activity. Ask a trusted adult if exclusion continues.",
