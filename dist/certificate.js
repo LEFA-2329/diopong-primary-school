@@ -52,9 +52,9 @@
     put(`trailer\n<< /Size 6 /Root 1 0 R >>\nstartxref\n${xref}\n%%EOF`);
     const result=new Uint8Array(length);let pos=0;chunks.forEach(c=>{result.set(c,pos);pos+=c.length;});return result;
   }
-  function isEligible(grade, answered, total) {return ['4','5','6','7'].includes(String(grade)) && total>0 && answered===total;}
+  function isEligible(grade, answered, total, score) {return ['4','5','6','7'].includes(String(grade)) && total>0 && answered===total && Number.isInteger(score) && score>=0 && score<=total && score*100>=70*total;}
   function addForm(container, details) {
-    if(!isEligible(details.grade,details.answered,details.total))return;
+    if(!isEligible(details.grade,details.answered,details.total,details.score))return;
     const sepedi=details.language==='nso',form=document.createElement('form');form.className='certificate-form';
     const title=document.createElement('h3');title.textContent=sepedi?'Taonelouta setifikeiti sa gago':'Download your achievement certificate';form.append(title);
     const note=document.createElement('p');note.textContent=sepedi?'Leina la gago le dirišwa mo poraosareng fela. Ga le bolokwe goba la romelwa.':'Your name is used only in this browser to generate the PDF. It is not saved or sent anywhere.';form.append(note);
@@ -84,3 +84,4 @@
   if(typeof module!=='undefined'&&module.exports)module.exports=api;
   else root.SchoolCertificate=api;
 })(typeof window!=='undefined'?window:globalThis);
+
