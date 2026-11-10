@@ -1455,3 +1455,15 @@ html{scroll-padding-top:130px}
 @media(min-width:761px) and (max-width:1100px){html{scroll-padding-top:190px}}
 @media(max-width:760px){html{scroll-padding-top:110px}body.menu-is-open header{z-index:1100}}
 @media print{header{position:static}}
+
+/* School-supplied photography and purpose. */
+.campus-hero>img{width:100%;height:470px;object-fit:cover;border-radius:38px 8px 38px 8px;box-shadow:0 18px 42px #133e2424}
+.school-identity>img{width:100%;height:290px;object-fit:cover;border-radius:18px}
+.school-purpose{display:grid;grid-template-columns:.85fr 1.3fr;gap:60px;align-items:start}
+.vision-panel{background:#e8efdf;padding:36px;border-radius:24px;border-top:5px solid #a37d20}
+.mission-list{padding-left:24px}.mission-list li{padding:0 0 18px 8px;line-height:1.75}.mission-list li::marker{color:#285538;font-weight:700}
+.values-list{display:flex;flex-wrap:wrap;gap:12px;list-style:none;padding:0}.values-list li{background:#edf2e8;color:#24452e;border:1px solid #ccd9c5;padding:10px 18px;border-radius:24px;font-weight:600}
+.campus-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.campus-gallery figure{margin:0;background:#fff;border:1px solid #dce2d5;border-radius:16px;overflow:hidden}.campus-gallery a{display:block;overflow:hidden}.campus-gallery img{display:block;width:100%;height:210px;object-fit:cover;transition:transform .25s}.campus-gallery a:hover img{transform:scale(1.035)}.campus-gallery figcaption{padding:15px 18px;font-weight:600;color:#24452e}
+.detail-list dd{overflow-wrap:anywhere}.school-contact-actions{margin:24px 0}
+@media(max-width:900px){.campus-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.school-purpose{gap:30px}}
+@media(max-width:600px){.campus-hero>img{height:290px}.school-purpose{grid-template-columns:1fr}.vision-panel{padding:24px}.campus-gallery{grid-template-columns:1fr}.campus-gallery img{height:220px}.school-identity>img{height:230px}}
