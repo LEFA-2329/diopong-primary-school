@@ -145,12 +145,12 @@ if (library) {
         `${subject} ${title} ${instructions} ${grade ? "grade " + grade : "general"}`.toLowerCase();
       const tag = document.createElement("p");
       tag.className = "eyebrow";
-      tag.textContent = `${grade ? "Grade " + grade + " · " : "General · "}${subject}`;
+      tag.textContent = `${grade ? "Grade " + grade + ". " : "General. "}${subject}`;
       const heading = document.createElement("h3");
       heading.textContent = title;
       const meta = document.createElement("p");
       meta.className = "activity-meta";
-      meta.textContent = `${levels[level]} · ${time}`;
+      meta.textContent = `${levels[level]}. ${time}`;
       const text = document.createElement("p");
       text.textContent = instructions;
       const details = document.createElement("details");
