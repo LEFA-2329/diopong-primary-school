@@ -62,13 +62,13 @@
     library.replaceChildren();
     document.querySelector("#bilingual-title").textContent = l.title;
     document.querySelector("#bilingual-count").textContent =
-      `${l.grade} ${grade.value}. ${selected().length} ${l.count}${topic.value === "all" ? "" : ". " + activityTopicLabels[topic.value][lang]}`;
+      `${l.grade} ${grade.value} . ${selected().length} ${l.count}${topic.value === "all" ? "" : " . " + activityTopicLabels[topic.value][lang]}`;
     selected().forEach((a) => {
       const card = document.createElement("article");
       card.className = "learning-card";
       const tag = document.createElement("p");
       tag.className = "eyebrow";
-      tag.textContent = subjects[a.subject][lang] + ". " + activityTopicLabels[activityTopics[a.title.en]][lang];
+      tag.textContent = subjects[a.subject][lang] + " . " + activityTopicLabels[activityTopics[a.title.en]][lang];
       const h = document.createElement("h3");
       h.textContent = a.title[lang];
       const p = document.createElement("p");
