@@ -1,0 +1,22 @@
+/* Quick information for families and the campus photograph viewer. */
+.home-contact-strip{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:22px 28px;margin-top:28px;background:#edf2e8;border:1px solid #d5dfcc;border-radius:14px;color:#22472e}
+.home-contact-strip .contact-quick-item{display:flex;flex-direction:column;gap:3px}
+.home-contact-strip .contact-quick-label{font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#50614e}
+.home-contact-strip a:not(.button){font-weight:700;color:#194a2e;text-decoration:underline;text-underline-offset:4px}
+.home-contact-strip .button{white-space:nowrap;flex-shrink:0}
+.photo-viewer{width:min(1100px,calc(100% - 32px));max-width:none;max-height:calc(100dvh - 32px);padding:0;border:1px solid #ffffff30;border-radius:18px;background:#102a20;color:#fff;box-shadow:0 24px 100px #0008;overflow:auto}
+.photo-viewer::backdrop{background:#07150ee8}
+.photo-viewer-open{overflow:hidden}
+.photo-viewer-panel{padding:20px}
+.photo-viewer-top,.photo-viewer-bottom{display:flex;align-items:center;justify-content:space-between;gap:18px}
+.photo-viewer h2{font-family:inherit;font-size:18px;color:#fff;margin:0}
+.photo-viewer button{min-height:44px;padding:10px 16px;background:#214c39;color:#fff;border:1px solid #72907e;border-radius:8px;font:inherit;font-weight:600;cursor:pointer;white-space:nowrap}
+.photo-viewer button:hover{background:#32684e}.photo-viewer button:focus-visible{outline:3px solid #f0cc72;outline-offset:3px}
+.photo-stage{display:flex;align-items:center;justify-content:center;min-height:200px;margin:18px 0;background:#0a1a13;border-radius:10px;overflow:hidden}
+.photo-stage img{display:block;max-width:100%;width:auto;max-height:calc(100dvh - 240px);height:auto;object-fit:contain}
+.photo-stage img[hidden],.photo-status[hidden]{display:none}
+.photo-status{padding:24px;text-align:center;color:#fff}
+.photo-caption{margin:0;text-align:center;line-height:1.5;color:#fff}
+.photo-keyboard{text-align:center;margin:12px 0 0;font-size:12px;color:#becdc4}
+@media(max-width:760px){.home-contact-strip{flex-wrap:wrap;gap:18px;padding:20px}.home-contact-strip .contact-quick-item{flex:1 1 180px}.home-contact-strip .button{width:100%;text-align:center}.photo-viewer{width:calc(100% - 16px);max-height:calc(100dvh - 16px);border-radius:12px}.photo-viewer-panel{padding:12px}.photo-viewer-top{gap:10px}.photo-viewer h2{font-size:16px}.photo-viewer-bottom{flex-wrap:wrap;gap:12px}.photo-caption{order:-1;width:100%;font-size:14px}.photo-viewer-bottom button{flex:1}.photo-stage img{max-height:calc(100dvh - 290px)}.photo-keyboard{display:none}}
+@media print{.photo-viewer{display:none!important}}
