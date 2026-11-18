@@ -1,0 +1,33 @@
+#staff {
+  scroll-margin-top: 7rem;
+}
+
+.staff-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.staff-grid figure {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid #dfe6dd;
+  border-radius: 1rem;
+  background: #fff;
+}
+
+.staff-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: contain;
+  background: #f5f6f3;
+}
+
+.staff-grid figcaption {
+  padding: 0.9rem 1rem;
+  color: #183c2c;
+  font-weight: 700;
+}
