@@ -1,7 +1,7 @@
 /* Generates a one-page PDF locally. Learner names are never stored or transmitted. */
 (function (root) {
   'use strict';
-  function drawCertificate(canvas, badge, details) {
+  function drawCertificate(canvas, badge, details, signature) {
     canvas.width = 1800; canvas.height = 1273;
     const ctx = canvas.getContext('2d');
     const green = '#174c2e', gold = '#b58a35';
@@ -31,8 +31,21 @@
     const subject=details.subject==='maths'?(sepedi?'Dipalo':'Mathematics'):(sepedi?'Go bala':'Reading comprehension');
     line(`${sepedi?'Mphato wa':'Grade'} ${details.grade}  |  ${subject}`, 810, 38, 'Arial');
     line(`${sepedi?'Dipoelo':'Score'}: ${details.score} / ${details.total} (${Math.round(details.score/details.total*100)}%)`, 880, 37, 'Arial');
-    line(`${sepedi?'Letšatšikgwedi':'Date'}: ${details.date}`, 960, 28, 'Arial');
-    line('Education - The key to a brighter future', 1042, 29, 'Georgia', gold);
+    line(`${sepedi?'Letšatšikgwedi':'Date'}: ${details.date}`, 938, 28, 'Arial');
+    if (signature) {
+      const signatureHeight = 64;
+      const signatureWidth = signature.width * signatureHeight / signature.height;
+      ctx.drawImage(signature, 900 - signatureWidth / 2, 951, signatureWidth, signatureHeight);
+      ctx.strokeStyle = gold;
+      ctx.beginPath();
+      ctx.moveTo(735, 1022);
+      ctx.lineTo(1065, 1022);
+      ctx.stroke();
+      line('Mogashoa M.B.', 1054, 29);
+      line(sepedi ? 'Hlogo ya sekolo' : 'Principal', 1085, 23, 'Arial');
+    } else {
+      line('Education - The key to a brighter future', 1042, 29, 'Georgia', gold);
+    }
     line('Online learning hub recognition - not a formal school assessment or academic qualification.', 1120, 22, 'Arial', '#526052');
     line('diopong.lefamalatji.co.za', 1160, 22, 'Arial', '#526052');
     return canvas;
@@ -53,6 +66,14 @@
     const result=new Uint8Array(length);let pos=0;chunks.forEach(c=>{result.set(c,pos);pos+=c.length;});return result;
   }
   function isEligible(grade, answered, total, score) {return ['4','5','6','7'].includes(String(grade)) && total>0 && answered===total && Number.isInteger(score) && score>=0 && score<=total && score*100>=70*total;}
+  function loadImage(path) {
+    return new Promise((resolve, reject) => {
+      const image = new Image();
+      image.onload = () => resolve(image);
+      image.onerror = () => reject(new Error(`Could not load ${path}`));
+      image.src = path;
+    });
+  }
   function addForm(container, details) {
     if(!isEligible(details.grade,details.answered,details.total,details.score))return;
     const sepedi=details.language==='nso',form=document.createElement('form');form.className='certificate-form';
@@ -69,9 +90,12 @@
       if(!name||!surname){status.textContent=sepedi?'Tlatša leina le sefane.':'Please enter both name and surname.';return;}
       button.disabled=true;status.textContent=sepedi?'PDF e a dirwa…':'Creating your PDF…';
       try {
-        const badge=await new Promise((resolve,reject)=>{const img=new Image();img.onload=()=>resolve(img);img.onerror=()=>reject(new Error('School badge could not load'));img.src='./school-crest.png';});
+        const [badge, signature] = await Promise.all([
+          loadImage('./school-crest.png'),
+          loadImage('./staff/principal-signature.png'),
+        ]);
         const date=new Intl.DateTimeFormat('en-ZA',{timeZone:'Africa/Johannesburg',day:'numeric',month:'long',year:'numeric'}).format(new Date());
-        const canvas=drawCertificate(document.createElement('canvas'),badge,{...details,name,surname,date});
+        const canvas=drawCertificate(document.createElement('canvas'),badge,{...details,name,surname,date},signature);
         const encoded=canvas.toDataURL('image/jpeg',.95).split(',')[1],binary=atob(encoded),jpeg=Uint8Array.from(binary,c=>c.charCodeAt(0));
         const url=URL.createObjectURL(new Blob([pdfFromJPEG(jpeg,canvas.width,canvas.height)],{type:'application/pdf'}));
         const link=document.createElement('a');link.href=url;link.download=`Diopong-Grade-${details.grade}-${details.subject}-Achievement.pdf`;document.body.append(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),30000);
