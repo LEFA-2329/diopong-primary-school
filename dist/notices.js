@@ -3,7 +3,7 @@ const schoolNotices = [{
   category: "admissions",
   published: "2026-11-19",
   title: "2027 learner applications",
-  body: "Late online applications for Grades R and 1 run from 19 to 30 November 2026. School staff can assist Monday to Friday, 07:30–14:00. Grades 2–7 apply using a manual form collected at school.",
+  body: "Late online applications for Grades R and 1 run from 19 to 30 November 2026. School staff can assist Monday to Friday, 07:30-14:00. Grades 2-7 apply using a manual form collected at school.",
   link: "./parents.html#admissions",
 }];
 const schoolEvents = [{
