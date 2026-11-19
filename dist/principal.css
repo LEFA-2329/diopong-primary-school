@@ -1,0 +1,76 @@
+.principal-profile {
+  scroll-margin-top: 7rem;
+}
+
+.principal-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  align-items: center;
+  gap: clamp(1.5rem, 5vw, 4.5rem);
+  padding: clamp(1rem, 3.5vw, 3rem);
+  border-radius: 1.5rem;
+  background: #163d2b;
+  color: #f8f6ed;
+}
+
+.principal-portrait {
+  margin: 0;
+}
+
+.principal-portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 38%;
+  border-radius: 0.875rem;
+}
+
+.principal-copy {
+  max-width: 35rem;
+}
+
+.principal-copy h2 {
+  margin: 0 0 1rem;
+  color: #fff;
+  font-size: clamp(2rem, 4.4vw, 4rem);
+}
+
+.principal-copy .principal-welcome {
+  color: #ffdb82;
+  font-size: clamp(1.125rem, 2vw, 1.5rem);
+  font-weight: 700;
+}
+
+.principal-copy p {
+  margin: 0 0 1rem;
+  color: inherit;
+}
+
+.principal-contact {
+  display: inline-flex;
+  gap: 0.55rem;
+  margin-top: 0.5rem;
+  padding-block: 0.5rem;
+  color: #ffdb82;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}
+
+.principal-contact:hover {
+  color: #fff;
+}
+
+@media (max-width: 720px) {
+  .principal-panel {
+    grid-template-columns: minmax(0, 1fr);
+    padding: clamp(1rem, 5vw, 2rem);
+  }
+
+  .principal-portrait {
+    width: min(100%, 23rem);
+    justify-self: center;
+  }
+}
