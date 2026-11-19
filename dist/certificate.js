@@ -91,8 +91,8 @@
       button.disabled=true;status.textContent=sepedi?'PDF e a dirwa…':'Creating your PDF…';
       try {
         const [badge, signature] = await Promise.all([
-          loadImage('./school-crest.png'),
-          loadImage('./staff/principal-signature.png'),
+          loadImage('/school-crest.png'),
+          loadImage('/staff/principal-signature.png'),
         ]);
         const date=new Intl.DateTimeFormat('en-ZA',{timeZone:'Africa/Johannesburg',day:'numeric',month:'long',year:'numeric'}).format(new Date());
         const canvas=drawCertificate(document.createElement('canvas'),badge,{...details,name,surname,date},signature);
