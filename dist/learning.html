@@ -12,13 +12,16 @@
     <title>Learning hub | Diopong Primary School</title>
     <link href="./school-crest.png" rel="icon" type="image/png" />
     <link href="./styles.css" rel="stylesheet" />
+    <link href="./learning-entry.css" rel="stylesheet" />
     <script defer="" src="./script.js"></script>
     <script defer="True" src="./grade-activities.js"></script>
     <script defer="True" src="./learning.js?v=20261112b"></script>
     <script defer="True" src="./bilingual-activities.js"></script>
     <script defer src="./activity-topics.js"></script>
     <script defer="True" src="./bilingual-hub.js?v=20261112b"></script>
-  <script src="./quiz-data.js" defer></script><script src="./certificate.js" defer></script><script src="./grade-quizzes.js" defer></script><script src="./worksheet-export.js?v=20261112b" defer></script></head>
+  <script src="./quiz-data.js" defer></script><script src="./certificate.js" defer></script><script src="./grade-quizzes.js" defer></script><script src="./worksheet-export.js?v=20261112b" defer></script>
+    <script src="./learning-entry.js" defer></script>
+  </head>
   <body>
     <a class="skip" href="#main">Skip to content</a>
     <div class="proposal">
@@ -63,13 +66,28 @@
         <p class="eyebrow">FREE LEARNING HUB</p>
         <h1>Little discoveries.<br />Lasting confidence.</h1>
         <p class="lede">
-          Choose Grade R-7, English or Sepedi, then a subject and topic. Explore
-          activities, printable worksheets and answer guidance at your own pace.
+          Find activities, quizzes and printable worksheets in English or Sepedi.
         </p>
-        <div class="hub-summary">
-          <span>Grade R-7</span><span>English &amp; Sepedi</span
-          ><span>160 bilingual activities . 20 per grade</span
-          ><span>Printable worksheets &amp; answers</span>
+      </section>
+      <section class="wrap section learning-entry" id="choose-grade" aria-labelledby="choose-grade-title" hidden>
+        <h2 id="choose-grade-title">Choose your grade</h2>
+        <div class="grade-options" role="group" aria-label="Grade">
+          <button type="button" data-grade="R" aria-pressed="false">Grade R</button>
+          <button type="button" data-grade="1" aria-pressed="false">Grade 1</button>
+          <button type="button" data-grade="2" aria-pressed="false">Grade 2</button>
+          <button type="button" data-grade="3" aria-pressed="false">Grade 3</button>
+          <button type="button" data-grade="4" aria-pressed="false">Grade 4</button>
+          <button type="button" data-grade="5" aria-pressed="false">Grade 5</button>
+          <button type="button" data-grade="6" aria-pressed="false">Grade 6</button>
+          <button type="button" data-grade="7" aria-pressed="false">Grade 7</button>
+        </div>
+        <div class="grade-resources" hidden>
+          <h3 id="selected-grade" aria-live="polite"></h3>
+          <div class="grade-resource-links">
+            <a href="#bilingual-title" data-grade-select="hub-grade"><strong>Activities</strong><span>Browse by language, subject and topic.</span></a>
+            <a href="#grade-quizzes" data-grade-select="quiz-grade"><strong>Quizzes</strong><span>Try questions and get feedback.</span></a>
+            <a href="#worksheet-downloads" data-grade-select="hub-grade"><strong>Worksheets</strong><span>Download PDF or Word with a separate answer file.</span></a>
+          </div>
         </div>
       </section>
       <section class="wrap section quiz-section" id="grade-quizzes"><p class="eyebrow">PRACTISE AND UNDERSTAND</p><h2>Choose a quiz. Learn from each answer.</h2><p>Short supplementary quizzes for Grades R-7. Grade R learners can answer with an adult reading aloud. Sepedi translations await fluent teacher review.</p><div class="hub-toolbar"><label>Grade / Mphato<select id="quiz-grade"><option value="R">Grade R</option><option value="1">Grade 1</option><option value="2">Grade 2</option><option value="3">Grade 3</option><option value="4">Grade 4</option><option value="5">Grade 5</option><option value="6">Grade 6</option><option value="7">Grade 7</option></select></label><label>Language / Polelo<select id="quiz-language"><option value="en">English</option><option value="nso">Sepedi</option></select></label><label>Subject / Thuto<select id="quiz-subject"><option value="maths">Maths / Dipalo</option><option value="reading">Reading / Go bala</option></select></label></div><p>Changing a selection starts a fresh quiz. Scores are not saved or sent anywhere. Each quiz has 10 questions. After completing a Grade 4-7 quiz with at least 70% (7 out of 10), you can download a named achievement certificate showing your result. Certificates recognise practice completion, not a formal school assessment.</p><div id="quiz-stage"></div><noscript>Enable JavaScript to use the quizzes. Downloadable worksheets remain available in the download centre.</noscript></section><section class="wrap section" id="bilingual-hub">
@@ -114,7 +132,7 @@
           </label>
         </div>
         <p id="bilingual-count" role="status"></p>
-        <label class="export-format" for="hub-format">File format / Mohuta wa faele<select id="hub-format"><option value="pdf">PDF (.pdf)</option><option value="docx">Word (.docx)</option></select></label><p id="hub-export-status" role="status"></p><div class="buttons">
+        <label class="export-format" id="worksheet-downloads" for="hub-format">File format / Mohuta wa faele<select id="hub-format"><option value="pdf">PDF (.pdf)</option><option value="docx">Word (.docx)</option></select></label><p id="hub-export-status" role="status"></p><div class="buttons">
           <button class="button primary" id="print-worksheet">
             Download worksheet / Taonelouta letlakala</button
           ><button class="button outline" id="print-answers">

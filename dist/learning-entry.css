@@ -1,0 +1,71 @@
+.learning-entry {
+  margin-bottom: 1.5rem;
+  padding: clamp(1rem, 4vw, 2.5rem);
+  background: #eef3e8;
+  border: 1px solid #d8e2d4;
+  border-radius: 1.25rem;
+}
+
+.grade-options,
+.grade-resource-links {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.grade-options {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 5.5rem), 1fr));
+  margin-top: 1rem;
+}
+
+.grade-options button,
+.grade-resource-links a {
+  background: #fff;
+  color: #18482f;
+  border: 1px solid #74917a;
+  border-radius: 0.65rem;
+}
+
+.grade-options button {
+  min-height: 3rem;
+  padding: 0.45rem;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.grade-options button:hover,
+.grade-resource-links a:hover {
+  background: #f9f1db;
+}
+
+.grade-options button[aria-pressed="true"] {
+  background: #18482f;
+  color: #fff;
+}
+
+.grade-resources {
+  margin-top: 1.5rem;
+}
+
+.grade-resource-links {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
+  margin-top: 0.75rem;
+}
+
+.grade-resource-links a {
+  display: grid;
+  gap: 0.25rem;
+  align-content: start;
+  padding: 0.85rem 1rem;
+}
+
+.grade-resource-links span {
+  font-size: 0.9rem;
+}
+
+#choose-grade,
+#grade-quizzes,
+#bilingual-title,
+#worksheet-downloads {
+  scroll-margin-top: 7rem;
+}
