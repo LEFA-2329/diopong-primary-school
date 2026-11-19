@@ -183,3 +183,47 @@
     }
   }
 }
+
+.staff-details {
+  margin-top: 0.45rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.45;
+}
+
+.staff-details summary {
+  color: #18482f;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.staff-details dl {
+  margin: 0.75rem 0 0;
+}
+
+.staff-details dl > div + div {
+  margin-top: 0.55rem;
+}
+
+.staff-details dt {
+  font-weight: 700;
+}
+
+.staff-details dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.staff-profile {
+  padding: 0.9rem 1rem;
+  border: 1px solid #dfe6dd;
+  border-radius: 1rem;
+  background: #fff;
+}
+
+.staff-profile h3 {
+  margin: 0;
+  font: inherit;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
