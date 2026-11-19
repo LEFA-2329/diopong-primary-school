@@ -1467,3 +1467,43 @@ html{scroll-padding-top:130px}
 .detail-list dd{overflow-wrap:anywhere}.school-contact-actions{margin:24px 0}
 @media(max-width:900px){.campus-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.school-purpose{gap:30px}}
 @media(max-width:600px){.campus-hero>img{height:290px}.school-purpose{grid-template-columns:1fr}.vision-panel{padding:24px}.campus-gallery{grid-template-columns:1fr}.campus-gallery img{height:220px}.school-identity>img{height:230px}}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  @keyframes page-arrival {
+    from {
+      opacity: 0.65;
+      translate: 0 0.625rem;
+    }
+    to {
+      opacity: 1;
+      translate: 0 0;
+    }
+  }
+
+  main > :is(.hero, .page-intro) {
+    animation: page-arrival 450ms ease-out both;
+  }
+
+  @supports (animation-timeline: view()) and (animation-range: entry 0% entry 60%) {
+    main > section:not(.hero, .page-intro, .home-contact-strip) {
+      animation: page-arrival linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 60%;
+    }
+
+    main > section:target,
+    main > section:focus-within {
+      animation: none;
+    }
+  }
+}
+
+@media screen and (hover: hover) and (prefers-reduced-motion: no-preference) {
+  :is(.path-card, .grade-resource-links a) {
+    transition: translate 180ms ease-out;
+  }
+
+  :is(.path-card, .grade-resource-links a):is(:hover, :focus-visible) {
+    translate: 0 -0.1875rem;
+  }
+}
