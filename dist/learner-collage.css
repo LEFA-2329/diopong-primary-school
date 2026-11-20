@@ -98,3 +98,26 @@
     }
   }
 }
+
+.learner-collage {
+  margin-top: 1rem;
+}
+
+@media (min-width: 681px) {
+  .learner-collage figure:nth-child(5n + 3):nth-last-child(1),
+  .learner-collage figure:nth-child(5n + 1):last-child {
+    grid-column: span 6;
+  }
+
+  .learner-collage figure:nth-child(5n + 3):nth-last-child(2),
+  .learner-collage figure:nth-child(5n + 4):last-child {
+    grid-column: span 3;
+  }
+}
+
+@media (max-width: 680px) {
+  .learner-collage figure:nth-child(5n + 2):last-child,
+  .learner-collage figure:nth-child(5n + 4):last-child {
+    grid-column: span 2;
+  }
+}
