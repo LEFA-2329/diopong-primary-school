@@ -1,0 +1,100 @@
+#learner-gallery {
+  scroll-margin-top: 7rem;
+}
+
+.learner-collage {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: clamp(0.55rem, 1.4vw, 1rem);
+}
+
+.learner-collage figure {
+  position: relative;
+  isolation: isolate;
+  grid-column: span 2;
+  margin: 0;
+  min-width: 0;
+  min-height: clamp(12rem, 21vw, 18rem);
+  border-radius: 0.9rem;
+  background: #173e2d;
+}
+
+.learner-collage figure:nth-child(5n + 1),
+.learner-collage figure:nth-child(5n + 2) {
+  grid-column: span 3;
+  min-height: clamp(13rem, 26vw, 24rem);
+}
+
+.learner-collage a,
+.learner-collage img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.learner-collage a {
+  overflow: hidden;
+}
+
+.learner-collage img {
+  display: block;
+  object-fit: cover;
+}
+
+.learner-collage figcaption {
+  position: absolute;
+  inset: auto 0 0;
+  padding: 1.6rem 0.8rem 0.7rem;
+  border-radius: 0 0 0.9rem 0.9rem;
+  background: linear-gradient(transparent, #081b14f5 70%);
+  color: #fff;
+  font-size: clamp(0.8rem, 1.4vw, 1rem);
+  font-weight: 700;
+  pointer-events: none;
+}
+
+.learner-collage a:focus-visible {
+  outline: 3px solid #f5c950;
+  outline-offset: 3px;
+}
+
+@media (max-width: 680px) {
+  .learner-collage {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .learner-collage figure,
+  .learner-collage figure:nth-child(5n + 2) {
+    grid-column: span 1;
+    min-height: 10.5rem;
+  }
+
+  .learner-collage figure:nth-child(5n + 1) {
+    grid-column: span 2;
+    min-height: 13rem;
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .learner-collage img {
+    transition: transform 320ms ease;
+  }
+
+  .learner-collage a:is(:hover, :focus-visible) img {
+    transform: scale(1.045);
+  }
+
+  @supports (animation-timeline: view()) and (animation-range: entry 0% entry 60%) {
+    .learner-collage figure {
+      animation: page-arrival linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 60%;
+    }
+
+    .learner-collage figure:focus-within {
+      animation: none;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 (() => {
-  const links = [...document.querySelectorAll('.campus-gallery a')];
+  const links = [...document.querySelectorAll('.campus-gallery a, .learner-collage a')];
   if (!links.length || typeof HTMLDialogElement === 'undefined' || !('showModal' in HTMLDialogElement.prototype)) return;
   const viewer = document.createElement('dialog');
   viewer.className = 'photo-viewer';
